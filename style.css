@@ -47,7 +47,14 @@ body{
   transition: all .5s ease-in-out;
   text-transform: uppercase;
 
+
 }
+#takeScreenshot:hover{
+  transition: 0.5s ease-in-out;
+  background-position: 100% 0px;
+}
+
+
 
 
 
