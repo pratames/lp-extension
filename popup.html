@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Screenshot</title>
+  <style>
+    body { font-family: sans-serif; padding: 10px; width: 200px; }
+    select, button { width: 100%; margin-top: 10px; }
+  </style>
+</head>
+<body>
+  <select id="dropdownA">
+    <option value="">Select</option>
+    <option value="hijack">Hijack</option>
+    <option value="hesitant">Hesitant</option>
+    <option value="extension">Extension</option>
+    <option value="wrong coupon">Wrong Coupon</option>
+    <option value="wishlit">Wishlit</option>
+    <option value="frustrated">Frustrated</option>
+  </select>
+
+  <select id="dropdownB" style="display:none;">
+    <option value="">Select option</option>
+  </select>
+
+  <button id="takeScreenshot">Take Screenshot</button>
+
+  <script src="popup.js"></script>
+</body>
+</html>
