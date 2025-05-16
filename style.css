@@ -1,4 +1,4 @@
-*{
+/* *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,16 +8,20 @@ body{
     font-size: 62.25%;
     color: #444;
     font-family: 'inter', sans-serif;
+    overflow: hidden;
+    border: 20%;
 }
 
   .container{
     padding: 20px;
-    width: 20rem;
-    background-color:rgb(255, 255, 228);
+    width: 15rem;
+
     display: flex;
      align-items: left;
    flex-direction: column;
    row-gap: 40px;
+   border-radius: 10%;
+
   }
 
   .selection-box{
@@ -33,20 +37,22 @@ body{
 }
 #takeScreenshot{
   height: 40px;
-  width: 130px;
+  width: 120px;
   font-size: 12px;
   font-weight: 600;
-  color: #fff;
+  color: black;
   cursor: pointer;
   border: none;
   background-size: 300% 100%;
   border-radius: 50px;
-  background-image: linear-gradient(90deg, #ff8400, #ffbf00, #ffae00, #fbb03b);
-   box-shadow: 0 4px 15px 0 #c90;
+  background-image: linear-gradient(
+90deg
+, #ff8400, #f76b6b, #ffae00, #fbb03b);
+  box-shadow: 0 4px 15px 0 #f76b6b;
   border: none;
-  transition: all .5s ease-in-out;
-  text-transform: uppercase;
-
+  background-color: #f76b6b;
+  transition: all .3s ease-in-out;
+   
 
 }
 #takeScreenshot:hover{
@@ -68,3 +74,63 @@ padding: .4rem .8rem;
    */
 
 
+
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-size: 62.5%; /* 1rem = 10px */
+    font-family: 'Inter', sans-serif;
+    color: #333;
+    background: #f4f6f8;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container {
+    background-color: white;
+    padding: 2rem;
+    width: 20rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .selection-box {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    align-items: flex-start;
+  }
+  
+  #dropdownA {
+    font-size: 1rem;
+    padding: 0.6rem;
+    border-radius: 0.5rem;
+    border: 1px solid #ccc;
+    width: 100%;
+  }
+  
+  #takeScreenshot {
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #fff;
+    background-color: #007bff; /* Bootstrap primary blue */
+    border: none;
+    border-radius: 0.375rem; /* 6px rounded */
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  #takeScreenshot:hover {
+    background-color:#0056b3; /* Darker blue on hover */
+  }
+  

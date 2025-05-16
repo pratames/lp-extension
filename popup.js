@@ -47,4 +47,39 @@ takeScreenshotBtn.addEventListener('click', () => {
 });
 
 
+// Inject the banner into the <h1> tag
+document.getElementById('injectBanner').addEventListener('click', () => {
+  chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
+    chrome.scripting.executeScript({
+      target: { tabId: tabs[0].id },
+      func: () => {
+        const bannerHTML = `
+          <a href="https://www.nutaku.net/games/boobs-vs-aliens/" target="_blank">
+            <img src="https://cdn1-images.nutaku.com/images/manage/games/boobs-vs-aliens/banner-ranking-2x.jpg?20220818103029"
+                 alt="Boobs vs Aliens"
+                 style=" max-width: 100%;">
+          </a>
+        `;
+        const h1 = document.querySelector('h1');
+        
+        if (h1) {
+          h1.insertAdjacentHTML('afterend', bannerHTML);
+        } else {
+          alert('No <h1> element found on the page.');
+        }
+      }
+    });
+  });
+});
+
+
+
+
+
+
+
+
+
+
+
 

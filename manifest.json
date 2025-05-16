@@ -3,26 +3,29 @@
     "name": "Screenshot Extension",
     "version": "1.0",
     "permissions": [
-        "activeTab",
-        "downloads",
-        "storage",
-        "tabs"
+      "activeTab",
+      "downloads",
+      "storage",
+      "tabs",
+      "scripting"
     ],
     "host_permissions": [
-        "<all_urls>"
+      "<all_urls>"
     ],
     "action": {
-        "default_popup": "popup.html"
+      "default_popup": "popup.html",
+      "default_title": "Inject Script"
     },
     "background": {
-        "service_worker": "background.js"
+      "service_worker": "background.js"
     },
     "commands": {
-        "take_default_screenshot": {
-            "suggested_key": {
-                "default": "Ctrl+Shift+Y"
-            },
-            "description": "Take default screenshot"
-        }
+      "take_default_screenshot": {
+        "suggested_key": {
+          "default": "Ctrl+Shift+Y"
+        },
+        "description": "Take default screenshot"
+      }
     }
-}
+  }
+  
