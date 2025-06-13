@@ -1,0 +1,21 @@
+# Ignore virtual environment
+mitm-venv/
+
+# Ignore Python cache
+__pycache__/
+*.py[cod]
+
+# Ignore system files
+.DS_Store
+
+# Ignore logs or temp files
+*.log
+*.tmp
+
+# Ignore env files
+.env
+
+# Ignore VS Code settings
+.vscode/
+
+# 
